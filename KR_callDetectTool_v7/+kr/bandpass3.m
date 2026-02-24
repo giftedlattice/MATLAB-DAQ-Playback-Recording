@@ -1,6 +1,0 @@
-function x = bandpass3(sig, fs, bpHz)
-d = designfilt('bandpassiir','FilterOrder',6, ...
-    'HalfPowerFrequency1',bpHz(1),'HalfPowerFrequency2',bpHz(2), ...
-    'SampleRate',fs);
-x = filtfilt(d, sig);
-end
